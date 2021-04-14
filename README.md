@@ -1,2 +1,2 @@
 # meme-sites
-voor alle meme sites, die gemaakt zijn voor de memes!
+hier staan alle sites die ik heb gemaakt voor de memes.
