@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<title>
+    shrek vs ricardo!!
+</title>
+<style>
+    html {
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+    #shrek {
+        height: 50%;
+        width: auto;
+        position: absolute;
+        left: 5%;
+        top: 25%;
+    }
+    #ricardo {
+        height: 50%;
+        width: auto;
+        position: absolute;
+        right: 5%;
+        top: 25%;
+    }
+    button {
+        border: 3px blue solid;
+        border-radius: 30%;
+        background: black;
+        color: white;
+        cursor: pointer;
+        height: 4%;
+        width: 100%;
+   }
+   #buttondiv {
+    top: 48%;
+    left: 45%;
+    position: absolute;
+   }
+   h1 {
+       font-size: 400%;
+   }
+</style>
+<script>
+    function fight() {
+        //moet nog vecht geluiden hier.
+        setInterval(startfight, 2000);
+    }
+
+    function startfight() {
+        //output tussen 1 en 100
+        var rng = parseInt((Math.random() * 100) + 1);
+        if (rng < 55) {
+            //shrek wint
+            console.log("shrek wint");
+            shrekwint()
+        }
+        else if (rng > 55) {
+            //ricardo wint
+            console.log("ricardo wint");
+            ricardowint()
+        }
+        else {
+            //gelijkspel
+            console.log("niemand wint");
+            niemandwint()
+        }
+    }
+
+    function shrekwint() {
+        window.location.href = 'shrek.html';
+    }
+
+    function ricardowint() {
+        window.location.href = 'ricardo.html';
+    }
+
+    function niemandwint() {
+        window.location.href = 'gelijkspel.html';
+    }
+    
+</script>
+<html>
+    <body>
+        <h1>
+            shrek vs ricardo!!
+        </h1>
+        <div id="shrekdiv">
+            <img src="GoodShrekImage.png" id="shrek">
+        </div>
+
+        <div id="ricardodiv">
+            <img src="ricardo.png" id="ricardo">
+        </div>
+        <div id="buttondiv">
+            <button onclick="fight()">
+                start het gevecht!!
+            </button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<title>
+    shrek wint!
+</title>
+<style>
+    html {
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+    #shrek1 {
+        height: 50%;
+        width: auto;
+        position: absolute;
+        left: 5%;
+        top: 25%;
+    }
+    #shrek2 {
+        height: 50%;
+        width: auto;
+        position: absolute;
+        right: 5%;
+        top: 25%;
+    }
+    button {
+        border: 3px blue solid;
+        border-radius: 30%;
+        background: black;
+        color: white;
+        cursor: pointer;
+        height: 4%;
+        width: 150%;
+   }
+   #buttondiv {
+    top: 48%;
+    left: 45%;
+    position: absolute;
+   }
+   h1 {
+       font-size: 400%;
+   }
+</style>
+<script>
+    function terug() {
+        window.location.href = 'index.html';
+    }
+</script>
+<html>
+    <body>
+        <h1>
+            ricardo heeft gewonnen!!
+        </h1>
+        <div id="shrek1div">
+            <img src="ricardo.png" id="shrek1">
+        </div>
+
+        <div id="shrek2div">
+            <img src="ricardo.png" id="shrek2">
+        </div>
+
+        <div id="buttondiv">
+            <button onclick="terug()">
+                nog een keer!
+            </button>
+        </div>
+
+
+    </body>
+</html>
